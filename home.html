@@ -3,167 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>git test</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        h1{
+            text-align: center;
+            font-size: 20px;
+            color: lightblue;
+            background-color: gray;
+        }
+        p{
+            font-size: 50px;
+            font-weight: 800;
+            color: brown;
+            background-color: chartreuse;
+            margin: auto;
+            border-radius: 5px;
+        }
+        a{  position: absolute;
+            margin-left: 20%;
+            text-decoration: none;
+        }
+        a:hover{
+            font-size: larger;
+            background-color: aliceblue;
+            border: 1px solid gold;
+        }
+    </style>
 </head>
-<style>
-    :root{
-        --content-font-size:10px;
-    }
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    body{
-        font-family: sans-serif;
-        display: flex;
-        flex-direction: column;
-        overflow-y:scroll;
-    }
-    
-    .header{
-        min-height: 50vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        font-size: 3rem;
-        font-weight: 800;
-    }
-    .header h1,p{
-        margin: 5%;
-    }
-    .main{
-        display: flex;
-    }
-    .right-aside{
-       order: 2;
-    }
-    .sections h2{
-        text-align: center;
-        font-size: 1.5rem;
-        background-color:#94C973;
-        margin: 1% 5%;
-    }
-    .sections h3{
-        margin: 1% 5%;
-    }
-    .footer ul{
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        gap:5%;
-    }
-    .footer{
-        text-align: center;
-    }
-@media screen and (min-width:601px) {
-    .header{
-        font-size: 4rem;
-    }
-}
-@media screen and (max-width:600px) {
-    body{
-        background-color: #2F5233;
-    }
-    .container{
-        background-color: beige;
-        color: #2F5233;
-        margin: 2%;
-    }
-    .header{
-        font-size: 2rem;
-        text-wrap: wrap;
-        text-align: center;
-        
-    }
-    .main{
-        display: block;
-    }
-    .right-aside .image img{
-        width: 100%;
-        height: 100%;
-        border-radius: 50% 0;
-        border: 2px solid green;
-        background-color:#2F5233;
-        padding: 5%;
-        box-sizing: border-box;
-    }
-    
-}
-</style>
 <body>
-<div class="container">
-    <header class="header">
-        <h1>Moorthi Dharmaraj</h1>
-        <p>Web Developer</p>
-    </header>
-    <nav></nav>
-<main class="main">
-    <aside class="right-aside">
-        <div class="image">
-        <img src="moorthi.png" alt="moorthi.img" width="400px" >
-        </div>
-    </aside>
-    <aside class="left-aside">
-        <div class="sections">
-            <section class="purpose">
-                <h2>Purpose</h2>
-                <p>
-                    Welcome to my digital space! Here, I showcase my passion for web development and 
-                    technology. Through a collection of projects and experiences, 
-                    I aim to demonstrate my skills, creativity, and commitment to
-                     delivering impactful web solutions. Whether you're a fellow 
-                     developer, a potential employer, or someone interested in 
-                     the world of web development, I invite you to explore 
-                     my journey and discover the exciting projects I've had 
-                     the pleasure of working on
-                </p>
-            </section>
-            <section class="techstack">
-                <h2>Tech Stack</h2>
-                        <p>
-                         I leverage a versatile set of technologies to bring web projects to life. My toolkit includes:
-                        </p>
-                        <h3>Frontend:</h3>
-                       <p> HTML5,<br>CSS3,<br> JavaScript <br>
-                        React.js for dynamic <br>and interactive user interfaces
-                       </p>
-                        <h3>Backend:</h3>
-                        <p>Node.js and <br>Express for server-side development <br>
-                        MongoDB for flexible and scalable data storage
-                        </p>
-                        <h3>Tools & Others:</h3>
-                        <p>
-                        Git for version control
-                        Responsive design for seamless experiences across devices
-                        Continuous integration and deployment for efficient project management
-                        By staying up-to-date with the latest industry trends and technologies, I ensure that my projects are not only functional but also cutting-edge.
-                        </p>
-            </section>
-            <section class="bio">
-                <h2>Bio</h2>
-                <p>
-                     Hello! I'm Moorthi Dharmaraj, <br>a self-taught web developer with a passion for turning ideas into digital experiences. My journey in web development began with a curiosity to understand how websites work, and it has evolved into a continuous exploration of new technologies and creative solutions.
-                    I specialize in crafting responsive and user-friendly web applications, always striving for clean code and elegant design. My approach to development involves a balance between functionality and aesthetics, with a keen eye for detail.
-                    When I'm not coding, you'll find me experimenting with new frameworks, contributing to open-source projects, or enjoying a cup of coffee while sketching out new project ideas. I believe in the power of collaboration and enjoy being part of a community that shares knowledge and pushes the boundaries of what can be achieved on the web.
-                    Feel free to explore my portfolio and discover the projects that reflect my dedication to the world of web development. If you have any questions or would like to connect, I'm just a message away. Let's create something amazing together!        
-                    Remember, these are just starting points, and you should tailor them to better represent your unique background and aspirations. Good luck with your portfolio development!
-                </p>
-            </section>
-            <article class="article">article tag</article>
-        </div>
-    </aside>
-    
-</main>
-    <footer class="footer">
-        <ul>
-            <li>mail</li>
-            <li>linkedin</li>
-            <li>insta</li>
-            <li>github</li>
-        </ul>
-        <p>&copy; 2024 Moorthi Dharmaraj. All rights reserved.</p>
-    </footer>
-</div>
+    <h1>Moorthi <a href="home.html">Home</a></h1>
+    <p>Testing git repo </p>
 </body>
 </html>
