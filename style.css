@@ -6,6 +6,20 @@
     --main-section-h3-font-size:2.4rem;
     --footer-font-size:1rem;
     --common-para-font-size:1.5rem;
+
+    --green-container-bgcolor:#B1D8B7;
+    --green-container-fontcolor:#08313A;
+    --rightaside-image-bgcolor: #2F5233;
+    --section-h2-bgcolor:#94C973;
+    --footer-ul-bgcolor:aliceblue;
+
+    /* --green-container-bgcolor:#B1B1B1;
+    --green-container-fontcolor:#0A0708;
+    --rightaside-image-bgcolor: #444444;
+    --section-h2-bgcolor:#747474;
+    --footer-ul-bgcolor:aliceblue; */
+
+
 }
 *{
     margin: 0;
@@ -18,8 +32,8 @@ body{
     flex-direction: column;
 }
 .container{
-    background-color: #B1D8B7;
-    color: #08313A;
+    background-color: var(--green-container-bgcolor);
+    color: var(--green-container-fontcolor);
 }
 
 .header{
@@ -34,20 +48,19 @@ body{
     margin:1% 5%;
     overflow: hidden;
 }
-p{
+.main p{
     margin:1% 5%;
     text-align: justify;
 }
 
 .main .right-aside .image img{
         float: right;
-        margin: 10px;
 }
 .right-aside{
    order: 2;
 }
 .right-aside .image img{
-    background-color: #2F5233;
+    background-color: var(--rightaside-image-bgcolor);
     border-radius: 0 50%;      
     border: 10px solid black;
     border-image: linear-gradient(to top left,#000,#2F5233);
@@ -57,7 +70,7 @@ p{
 .sections h2{
     text-align: center;
     font-size: var(--main-section-h3-font-size);
-    background-color:#94C973;
+    background-color:var(--section-h2-bgcolor);
     margin: 1% 5%;
 }
 .sections h3{
@@ -69,16 +82,29 @@ p{
     display: flex;
     justify-content: center;
     gap:5%;
+    background-color: var(--footer-ul-bgcolor);
+    margin: 1% 5%;
+    height: 20vh;
 }
 .footer{
     text-align: center;
 }
-p{
+.footer ul li{
+    margin: auto 0;
+}
+.footer ul li img{
+    width: 50px;
+    height: 50px;
+}
+.header p,.main p{
     font-size: var(--common-para-font-size);
 }
 @media screen and (min-width:601px) {
 .header{
     font-size: var(--header-font-size)
+}
+.footer p{
+    font-size: var(--common-para-font-size);
 }
 }
 @media screen and (max-width:600px) {
@@ -106,8 +132,6 @@ body{
     border: 2px solid green;
     background-color:#2F5233;
     padding: 5%;
-    box-sizing: border-box;
-    align-self: flex-start;
 }
 
 }
