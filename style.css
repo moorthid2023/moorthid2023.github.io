@@ -36,6 +36,9 @@ body{
     color: var(--green-container-fontcolor);
 }
 
+.togglebutton{
+    display: none;
+}
 .header{
     min-height: 50vh;
     display: flex;
