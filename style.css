@@ -37,7 +37,7 @@ body{
 }
 
 .togglebutton{
-    display: none;
+    display:none;
 }
 .header{
     min-height: 50vh;
