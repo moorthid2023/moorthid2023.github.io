@@ -4,7 +4,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="/style.css">
+<!--     <link rel="stylesheet" href="/style.css"> -->
+    <style>
+        :root{
+    --content-font-size:10px;
+    --header-font-size:4rem;
+    --main-font-size:3rem;
+    --main-section-h2-font-size:3rem;
+    --main-section-h3-font-size:2.4rem;
+    --footer-font-size:1rem;
+    --common-para-font-size:1.5rem;
+
+    --green-container-bgcolor:#B1D8B7;
+    --green-container-fontcolor:#08313A;
+    --rightaside-image-bgcolor: #2F5233;
+    --section-h2-bgcolor:#94C973;
+    --footer-ul-bgcolor:aliceblue;
+
+    /* --green-container-bgcolor:#B1B1B1;
+    --green-container-fontcolor:#0A0708;
+    --rightaside-image-bgcolor: #444444;
+    --section-h2-bgcolor:#747474;
+    --footer-ul-bgcolor:aliceblue; */
+
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    background-color: var(--green-container-bgcolor);
+    color: var(--green-container-fontcolor);
+}
+
+.header{
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 800;
+}
+.header h1,h2{
+    margin:1% 5%;
+    overflow: hidden;
+}
+.togglebutton{
+    display:none;
+}
+.main p{
+    margin:1% 5%;
+    text-align: justify;
+}
+
+.main .right-aside .image img{
+        float: right;
+}
+.right-aside{
+   order: 2;
+}
+.right-aside .image img{
+    background-color: var(--rightaside-image-bgcolor);
+    border-radius: 0 50%;      
+    border: 10px solid black;
+    border-image: linear-gradient(to top left,#000,#2F5233);
+    border-image-slice: 1;
+}
+
+.sections h2{
+    text-align: center;
+    font-size: var(--main-section-h3-font-size);
+    background-color:var(--section-h2-bgcolor);
+    margin: 1% 5%;
+}
+.sections h3{
+    margin: 1% 5%;
+    font-size: var(--main-section-h3-font-size);
+}
+.footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap:5%;
+    background-color: var(--footer-ul-bgcolor);
+    margin: 1% 5%;
+    height: 20vh;
+}
+.footer{
+    text-align: center;
+}
+.footer ul li{
+    margin: auto 0;
+}
+.footer ul li img{
+    width: 50px;
+    height: 50px;
+}
+.header p,.main p{
+    font-size: var(--common-para-font-size);
+}
+@media screen and (min-width:601px) {
+.header{
+    font-size: var(--header-font-size)
+}
+.footer p{
+    font-size: var(--common-para-font-size);
+}
+}
+@media screen and (max-width:600px) {
+body{
+    background-color: #2F5233;
+}
+.container{
+    background-color: beige;
+    color: #2F5233;
+    margin: 2%;
+}
+.header{
+    font-size: 2rem;
+    text-wrap: wrap;
+    text-align: center;
+    
+}
+.main{
+    display: block;
+}
+.right-aside .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50% 0;
+    border: 2px solid green;
+    background-color:#2F5233;
+    padding: 5%;
+}
+
+}
+    </style>
 </head>
 <body>
 <div class="container">
